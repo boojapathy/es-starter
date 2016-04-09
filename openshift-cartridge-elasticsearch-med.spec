@@ -1,17 +1,17 @@
 %global cartridgedir %{_libexecdir}/openshift/cartridges/elasticsearch
 
 Summary:       Provides Elasticsearch support
-Name:          openshift-cartridge-elasticsearch
-Version:       1.0.3
+Name:          openshift-cartridge-elasticsearch-med
+Version:       1.0
 Release:       1%{?dist}
 Group:         Network/Daemons
 License:       ASL 2.0
 URL:           http://www.elasticsearch.org
 Source0:       %{name}-%{version}.tar.gz
-Requires:      java-1.7.0-openjdk
+Requires:      java-1.8.0-openjdk
 Requires:      rubygem(openshift-origin-node)
 Requires:      openshift-origin-node-util
-Provides:      openshift-cartridge-elasticsearch-1.2 = 1.0.0
+Provides:      openshift-cartridge-elasticsearch-med-1.0 = 1.0.0
 BuildArch:     noarch
 
 %description
@@ -42,22 +42,6 @@ Provides Elasticsearch cartridge support to OpenShift. (Cartridge Format V2)
 %doc %{cartridgedir}/LICENSE.txt
 
 %changelog
-* Mon Jul 14 2014 Builder <getup@getupcloud.com> 1.0.3-1
-- bump version (getup@getupcloud.com)
-- Update manifest.yml (mateus@caruccio.com)
-
-* Sun Jul 13 2014 Builder <getup@getupcloud.com> 1.0.2-1
-- fix spec (getup@getupcloud.com)
-
-* Sun Jul 13 2014 Builder <getup@getupcloud.com> 1.0.1-1
-- fix spec (getup@getupcloud.com)
-- fix spec (getup@getupcloud.com)
-- fix spec (getup@getupcloud.com)
-- fix spec (getup@getupcloud.com)
-- fix spec (getup@getupcloud.com)
-- fix spec (getup@getupcloud.com)
-- fix spec (getup@getupcloud.com)
-
-* Sun Jul 13 2014 Builder <getup@getupcloud.com> 1.0.0-1
-- new package built with tito
-
+* Mon Apr 09 2016 med 4 life <support@med4life.in> 1.0.0-1
+- bump version (support@med4life.in)
+- Update manifest.yml (support@med4life.in)

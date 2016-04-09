@@ -1,12 +1,12 @@
 Name: elasticsearch
 Cartridge-Short-Name: ELASTICSEARCH
-Display-Name: Elasticsearch 1.2
+Display-Name: Elasticsearch 2.3.1
 Description: "Elasticsearch is a flexible and powerful open source, distributed, real-time search and analytics engine. Architected from the ground up for use in distributed environments where reliability and scalability are must haves, Elasticsearch gives you the ability to move easily beyond simple full-text search."
-Version: 1.2
+Version: 1.0
 License: Apache
 Vendor: elasticsearch.org
-Cartridge-Version: 0.0.2
-Cartridge-Vendor: getup
+Cartridge-Version: 0.0.1
+Cartridge-Vendor: med4life
 
 Categories:
   - web_framework
@@ -14,8 +14,8 @@ Categories:
 
 Provides:
   - elasticsearch
-  - elasticsearch-1
-  - elasticsearch-1.2
+  - elasticsearch-2
+  - elasticsearch-2.3
 
 Publishes:
   publish-unicast-host:
