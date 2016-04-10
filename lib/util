@@ -21,7 +21,7 @@ function _install_version()
 
 	echo Downloading version $VERSION
 	mkdir $OPENSHIFT_ELASTICSEARCH_DIR/usr
-	curl https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-$VERSION.tar.gz | tar xzf - --strip-components=1 -C $OPENSHIFT_ELASTICSEARCH_DIR/usr
+  curl https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch/$VERSION/elasticsearch-$VERSION.tar.gz | tar xzf - --strip-components=1 -C $OPENSHIFT_ELASTICSEARCH_DIR/usr
 }
 
 function _install_kibana_version()
