@@ -1,5 +1,3 @@
-[Versão Português](README_pt.md)
-
 OpenShift Elasticsearch Cartridge
 =================================
 This cartridge provides an Elasticsearch cluster as a standalone application with a kibana dashboard served and accessible by targetting the index page `/index.html`.
@@ -10,17 +8,7 @@ You receive a free 750h trial to test our services.
 
 To create your Elasticsearch app, run:
 
-    rhc app-create <app> http://reflector-getupcloud.getup.io/github/getupcloud/openshift-cartridge-elasticsearch
-
-If you want to create a Elasticsearch cluster, append the flag `--scaling`:
-
-    rhc app-create <app> http://reflector-getupcloud.getup.io/github/getupcloud/openshift-cartridge-elasticsearch --scaling
-
-Adding extra nodes to cluster
-=============================
-To add more nodes to the cluster, simply add more gears:
-
-    rhc cartridge-scale -a <app> getup-elasticsearch <number of total gears you want>
+    rhc app-create <app> https://raw.githubusercontent.com/boojapathy/es-starter/master/metadata/manifest.yml
 
 Plugins
 =======
@@ -40,14 +28,9 @@ Configuration is build on-the-fly and starts with contents from file
 same dir (except for `logging.yml` and `elasticsearch.in.sh`). Files ending with
 `.erb` will be pre-processed using ruby's erb command.
 
-Kibana & Nginx
-==============
-Thanks to [@popox](https://github.com/popox) we now have Kibana support! Just point your browser to `/kibana` and _voilà_!
-Both ES and Kibana are served from nginx. You can configure nginx editing the file `nginx.conf.erb` from git repo's root.
-
 Credits
 =======
-Based on initial work from https://github.com/ncdc/openshift-elasticsearch-cartridge.
+Based on initial work from https://github.com/getupcloud/openshift-cartridge-elasticsearch
 
 License
 =======

@@ -1,7 +1,7 @@
 %global cartridgedir %{_libexecdir}/openshift/cartridges/elasticsearch
 
 Summary:       Provides Elasticsearch support
-Name:          openshift-cartridge-elasticsearch-med
+Name:          es-starter
 Version:       1.0
 Release:       1%{?dist}
 Group:         Network/Daemons
@@ -11,7 +11,7 @@ Source0:       %{name}-%{version}.tar.gz
 Requires:      java-1.8.0-openjdk
 Requires:      rubygem(openshift-origin-node)
 Requires:      openshift-origin-node-util
-Provides:      openshift-cartridge-elasticsearch-med-1.0 = 1.0.0
+Provides:      es-starter-1.0 = 1.0.0
 BuildArch:     noarch
 
 %description
