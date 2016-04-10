@@ -7,7 +7,7 @@ License: Apache
 Vendor: elasticsearch.org
 Cartridge-Version: 0.0.1
 Cartridge-Vendor: med4life
-Source-Url: git://github.com/boojapathy/es-starter.git
+Source-Url: https://github.com/boojapathy/es-starter.git
 
 Categories:
   - web_framework
